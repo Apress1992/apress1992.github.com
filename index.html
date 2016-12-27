@@ -1,343 +1,558 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Lantern’Resume</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/slimmenu.css" rel="stylesheet" media="screen">
+<script src="js/jquery.min.js"></script>
+</head>
+<body>
+<div class="content" id="home">
+	<div class="wrap">
+		<div class="header_style1">
+			<!-- start h_logo -->
+			<div class="logo">
+				<h1><a href="index.html">My Resume</a></h1>
+			</div>
+			<!-- start h_menu -->
+			<div class="h_menu">
+				<ul class="flexy-menu thick orange">
+					<li> <a href="#home" class="scroll">主页</a></li>
+					<li><a href="#Portfolio" class="scroll">职务</a></li>
+					<li><a href="#skills" class="scroll">技能</a> </li>
+					<li><a class="scroll" href="#Experience">工作经历</a></li>
+					<li><a href="#contact" class="scroll">联系我</a></li>
+				</ul>
+			</div>
+			<!-- end h_menu -->
+			<div class="clear"> </div>
+		</div>
+		<!---------menu-script------------->
+		<!-- start manu -->
+		<script type="text/javascript" src="js/flexy-menu.js"></script>
+		<link href="css/header_style1.css" rel="stylesheet" type="text/css" media="all" />
+		<script type="text/javascript">$(document).ready(function(){$(".flexy-menu").flexymenu({speed: 400,type: "horizontal",align: "right"});});</script>
+		<!---------end-script-menu------------->
+		<div class="slider">
+			<!---start-da-slider----->
+			<div id="da-slider" class="da-slider">
+				<div class="da-slide">
+					<h2>Web前端开发</h2>
+					<p>计算机擅长接受指令，不擅了解你的思想。</p>
+					<a href="#" class="da-link"><span> READ NOW</span></a> </div>
+				<div class="da-slide">
+					<h2>书籍的鉴定盟友</h2>
+					<p>知识最大的敌人不是无知，而是错觉。</p>
+					<a href="#" class="da-link"><span> READ NOW</span></a> </div>
+				<div class="da-slide">
+					<h2>运动，停不下来</h2>
+					<p>运动让我感受生命的张力</p>
+					<a href="#" class="da-link"><span> READ NOW</span></a> </div>
+				<nav class="da-arrows"> <span class="da-arrows-prev"></span> <span class="da-arrows-next"></span> </nav>
+			</div>
+			<div class="down-arrow"> <a href="#group_1" class="scroll" ><span> </span></a> </div>
+			<link rel="stylesheet" type="text/css" href="css/slider.css" />
+			<script type="text/javascript" src="js/modernizr.custom.28468.js"></script>
+			<script type="text/javascript" src="js/jquery.cslider.js"></script>
+			<script type="text/javascript">
+				$(function() {
 
-<!DOCTYPE html>
- <html >
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>My Web</title>
+					$('#da-slider').cslider({
+						autoplay	: true,
+						bgincrement	: 450
+					});
 
-        <link rel="stylesheet" href="styles/index.css">
-        <link rel="stylesheet" href="styles/font-awesome.css">
-        <script src="scripts/jquery-3.1.0.js"></script>
-        <script src="scripts/index.js"></script>
+				});
+			</script>
+			<!---//End-da-slider----->
+		</div>
+	</div>
+</div>
+<!----start-team--------->
+<div class="group_1" id="group_1">
+	<div class="group_1-items">
+		<div class="wrap">
+			<div id="owl-demo" class="owl-carousel">
+				<div class="item" >
+					<div class="carousel">
+						<div class="group_1_img">
+							<h3 class="ui">JS</h3>
+							<h4 class="ux">PS</h4>
+							<div class="clear"> </div>
+						</div>
+						<div class="group_1_text">
+							<h3>自学过很多学科，最终选择了前端</h3>
+							<p>对知识有着本能的渴望，大学期间，广泛学习心理学、社会学、历史学、计算机、哲学、管理学、经济学等学科，
+							最后还是决定在计算机的道路上走下去。</p>
+						</div>
+						<div class="clear"> </div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="carousel">
+						<div class="group_1_img">
+							<h3 class="ui fontend">Javascript</h3>
+							<h4 class="ux ui1">CSS</h4>
+							<div class="clear"> </div>
+						</div>
+						<div class="group_1_text">
+							<h3>看过了很多书，却不如程序书有深度</h3>
+							<p>从小热爱读书，大学更是以700多本的读书量创造了学校图书馆历史，
+								最后发现程序书更有系统，更有力量。</p>
+						</div>
+						<div class="clear"> </div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="carousel">
+						<div class="group_1_img ">
+							<h3 class="ui core">LESS</h3>
+							<h4 class="ux ui1">SASS</h4>
+							<div class="clear"> </div>
+						</div>
+						<div class="group_1_text">
+							<h3>走过了很多地方，最终决定坐下来敲些代码</h3>
+							<p>我的足记也曾遍布华夏，本以为心有理想，身体便在路上。后来觉得还是要坐下来安静的写些代码。</p>
+						</div>
+						<div class="clear"> </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="group_2" id="Portfolio">
+	<h3 class="heading">我的作品</h3>
+	<div class="group_2_items">
+		<div class="wrap">
+			<div id="owl-demo1" class="owl-carousel">
+				<div class="item" >
+					<div class="carousel">
+						<div class="group_2_img1"> <img src="images/img1.png" alt=""> </div>
+						<div class="group_2_text2">
+							<div class="desc">
+								<h3>名称</h3>
+								<h4>瓶口网主站</h4>
+							</div>
+							<div class="desc">
+								<h3>开发者</h3>
+								<h4>Lantern</h4>
+							</div>
+							<div class="desc">
+								<h3>简介</h3>
+								<h4>瓶口网PC端主站，免费撮合建材的电子商务公司</h4>
+							</div>
+							<div class="button_2"> <a href="http://www.pingkouwang.com/">访问</a> </div>
+						</div>
+						<div class="clear"> </div>
+
+					</div>
+				</div>
+				<div class="item">
+					<div class="carousel">
+						<div class="group_2_img1"> <img src="images/img2.jpg" alt=""> </div>
+						<div class="group_2_text2">
+							<div class="desc">
+								<h3>名称</h3>
+								<h4>优材系统</h4>
+							</div>
+							<div class="desc">
+								<h3>开发者/h3>
+								<h4>Lantern</h4>
+							</div>
+							<div class="desc">
+								<h3>简介</h3>
+								<h4>公司内部的建材交易管理系统，用来管理供货商。 </h4>
+							</div>
+							<div class="button_2"> <a href="#">访问</a> </div>
+						</div>
+						<div class="clear"> </div>
+
+					</div>
+				</div>
+				<div class="item">
+					<div class="carousel">
+						<div class="group_2_img1"> <img src="images/img3.jpg" alt=""> </div>
+						<div class="group_2_text2">
+							<div class="desc">
+								<h3>名称</h3>
+								<h4>瓶口网手机端</h4>
+							</div>
+							<div class="desc">
+								<h3>开发者</h3>
+								<h4>Lantern</h4>
+							</div>
+							<div class="desc">
+								<h3>简介</h3>
+								<h4>瓶口网的移动端页面</h4>
+							</div>
+							<div class="button_2"> <a href="#">访问</a> </div>
+						</div>
+						<div class="clear"> </div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- Owl Carousel Assets -->
+<link href="css/owl.carousel.css" rel="stylesheet">
+<!-- Owl Carousel Assets -->
+<!-- Prettify -->
+<script src="js/owl.carousel.js"></script>
+<script>
+		    $(document).ready(function() {
+
+		      $("#owl-demo").owlCarousel({
+		        items : 1,
+		        lazyLoad : true,
+		        autoPlay : true,
+		        navigation : true,
+			    navigationText : ["",""],
+			    rewindNav :true,
+			    scrollPerPage :true,
+			    pagination : true,
+    			paginationNumbers: false,
+		      });
+
+		    });
+		    $(document).ready(function() {
+
+		      $("#owl-demo1").owlCarousel({
+		        items : 1,
+		        lazyLoad : true,
+		        autoPlay : true,
+		        navigation : true,
+			    navigationText : ["",""],
+			    rewindNav : true,
+			    scrollPerPage :true,
+			    pagination : false,
+    			paginationNumbers: false,
+		      });
+
+		    });
+		    $(document).ready(function() {
+
+		      $("#owl-demo2").owlCarousel({
+		        items : 1,
+		        lazyLoad : true,
+		        autoPlay : true,
+		        navigation : false,
+			    navigationText : ["",""],
+			    rewindNav : false,
+			    scrollPerPage :true,
+			    pagination : false,
+    			paginationNumbers: false,
+		      });
+
+		    });
+		    </script>
+<!-- //Owl Carousel Assets -->
+<div class="skills" id="skills">
+	<section class="text-light">
+		<div  class="wrap">
+			<div class="row-content1">
+				<h3 class="heading">掌握技能</h3>
+				<p class="para">优秀的编程能力及良好的编程习惯和团队协作精神;对html5技术领域、
+					新兴web标准和web发展趋势具有良好的洞察力、极高的关注度和求知欲</p>
+				<div class="chart" data-percent="95" data-bar-color="#35AFBA" data-animate="4000">
+					<div class="chart-content">
+						<div class="percent"></div>
+						<div class="chart-title">HTML&HTML5</div>
+					</div>
+					<!-- chart-content -->
+				</div>
+				<!-- chart -->
+				<div class="chart" data-percent="90" data-bar-color="#FF6060" data-animate="2500">
+					<div class="chart-content">
+						<div class="percent"></div>
+						<div class="chart-title">CSS&CSS3</div>
+					</div>
+					<!-- chart-content -->
+				</div>
+				<!-- chart -->
+				<div class="chart" data-percent="80" data-bar-color="#3AD079" data-animate="3000">
+					<div class="chart-content">
+						<div class="percent"></div>
+						<div class="chart-title">Javascript</div>
+					</div>
+					<!-- chart-content -->
+				</div>
+				<!-- chart -->
+				<div class="chart" data-percent="81" data-bar-color="#58C0E3" data-animate="3500">
+					<div class="chart-content">
+						<div class="percent"></div>
+						<div class="chart-title">Jquery</div>
+					</div>
+					<!-- chart-content -->
+				</div>
+				<div class="chart" data-percent="83" data-bar-color="#FFA500" data-animate="3500">
+					<div class="chart-content">
+						<div class="percent"></div>
+						<div class="chart-title">Bootsrtap</div>
+					</div>
+					<!-- chart-content -->
+				</div>
+				<div class="chart" data-percent="78" data-bar-color="#A020F0" data-animate="3500">
+					<div class="chart-content">
+						<div class="percent"></div>
+						<div class="chart-title">Angular</div>
+					</div>
+					<!-- chart-content -->
+				</div>
+				<div class="chart" data-percent="75" data-bar-color="#7CFC00" data-animate="3500">
+					<div class="chart-content">
+						<div class="percent"></div>
+						<div class="chart-title">LESS%SASS</div>
+					</div>
+					<!-- chart-content -->
+				</div>
+				<div class="chart" data-percent="70" data-bar-color="#0A0A0A" data-animate="3500">
+					<div class="chart-content">
+						<div class="percent"></div>
+						<div class="chart-title">seaJS&Grunt</div>
+					</div>
+					<!-- chart-content -->
+				</div>
+				<!-- chart -->
+				<div class="clear"> </div>
+			</div>
+		</div>
+	</section>
+	<script src="js/plugins.js"></script>
+	<script src="js/script.js"></script>
+</div>
+<div class="exper" id="Experience">
+	<div class="wrap">
+		<h3 class="heading">工作经历</h3>
+		<section class="row section">
+			<div class="row-content2">
+				<div class="timeline-label column six">
+					<h4>工作内容</h4>
+					<p>		1、负责前端界面的构建和各类交互设计与实现；<br/>
+						2、前端样式和脚本的模块设计及优化；<br/>
+						3、协同后台开发人员完成项目；<br/>
+						4、负责公司平台系统的前端开发工作（新产品、垂直站、移动端 、后端系统）；
+					</p>
+					<div class="brows_button_4"> <a href="#">View on Linkedin</a> </div>
+				</div>
+				<!-- timeline-label -->
+				<div class="timeline column six last">
+					<div class="year">
+						<time datetime="2015">2015</time>
+						<div class="experience"> <span class="circle"></span>
+							<div class="experience-img"><img src="images/asset01.jpg" alt=""></div>
+							<div class="experience-info clear-after">
+								<h5>瑞克广告</h5>
+								<div class="role">前端开发</div>
+								<p>2015-12----2016-6</p>
+							</div>
+							<!-- experience-info -->
+						</div>
+						<!-- experience -->
+						<div class="experience"> <span class="circle"></span>
+							<div class="experience-img"><img alt=""></div>
+							<div class="experience-info clear-after">
+
+							</div>
+							<!-- experience-info -->
+						</div>
+						<!-- experience -->
+					</div>
+					<!-- year -->
+					<div class="year year1">
+						<time datetime="2016">2016</time>
+						<div class="experience"> <span class="circle"></span>
+							<div class="experience-img"><img src="images/asset03.jpg" alt=""></div>
+							<div class="experience-info clear-after">
+								<h5>瓶口网</h5>
+								<div class="role">前端开发</div>
+								<p> 2016-7---2016-12</p>
+							</div>
+							<!-- experience-info -->
+						</div>
+						<!-- experience -->
+						<div class="experience"> <span class="circle"></span>
+							<div class="experience-img"><img src="images/asset04.jpg" alt=""></div>
+							<div class="experience-info clear-after">
+								<h5>Future？</h5>
+								<div class="role">期待与你相遇</div>
+								<p>赶紧联系我吧</p>
+							</div>
+							<!-- experience-info -->
+						</div>
+						<!-- experience -->
+					</div>
+					<!-- year -->
+				</div>
+				<!-- timeline -->
+				<div class="clear"> </div>
+			</div>
+		</section>
+	</div>
+</div>
+<div class="group_3">
+	<div class="group_3-items">
+		<div class="wrap">
+			<div id="owl-demo2" class="owl-carousel">
+				<div class="item" >
+					<div class="carousel">
+						<div class="group_3_img"> <img src="images/img_js.png" alt="" style="width:250px;"> </div>
+						<div class="group_1_text group_3_text">
+							<h3> 我的JS书籍</h3>
+							<p>《Javascript入门经典》《Javascript高级程序设计》《Javascript权威指南》《你不知道的Javascript》
+								《JavascriptDOM编程的艺术》《Javascript编程精解》《Javascript忍者秘籍》《高性能Javascript》
+								《Javascript语言精粹》《编写可维护的Javascript》《Javascript设计模式》《ES6标准入门》
+							《Node.js入门经典》《深入浅出Node.js》《精通Angulars》《Ajax》《Jquery忍者秘籍》《锋利的Jquery》
+						《学习Javascript算法结构》《编写Javascript的66个方法》
+					</p>
+						</div>
+						<div class="clear"> </div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="carousel">
+						<div class="group_3_img"> <img src="images/img_css.png" alt="" style="width:250px;"> </div>
+						<div class="group_1_text group_3_text">
+							<h3>我的CSS书籍</h3>
+							<p>《Head First HTML和CSS》《CSS权威指南》《CSS3专业网页开发指南》《精通CSS》</p>
+						</div>
+						<div class="clear"> </div>
+					</div>
+				</div>
+				<div class="item">
+					<div class="carousel">
+						<div class=" group_3_img"> <img src="images/img_other.png" alt="" style="width:250px;"> </div>
+						<div class="group_1_text group_3_text">
+							<h3>其他电脑书籍</h3>
+							<p>《精通正则表达式》《PHP和MySQL Web开发》《高性能网站建设指南》《计算机网络》《计算机程序的构造和解释》
+								《SQL必知必会》《HTTP权威指南》《算法导论》《Ruby基础编程》《Ruby元编程》
+							《程序员的修炼之道》《HTML5权威指南》《Web全栈工程师的自我修养》《深入理解计算机系统》
+						</p>
+						</div>
+						<div class="clear"> </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="contact" id="contact">
+	<div class="wrap">
+		<h3 class="heading">联系我</h3>
+		<form>
+			<div class="left-form">
+				<ul>
+					<li class="name"> <a href="#" class="icon user"> </a>
+						<input type="text" placeholder="姓名" required>
+						<div class="clear"> </div>
+					</li>
+					<li class="email"> <a href="#" class="icon mail"> </a>
+						<input type="email" placeholder="Email" required>
+						<div class="clear"> </div>
+					</li>
+					<div class="clear"> </div>
+					<li>
+						<input type="text" placeholder="电话" required>
+						<div class="clear"> </div>
+					</li>
+					<li>
+						<input type="text" placeholder="社交账号" required>
+						<div class="clear"> </div>
+					</li>
+					<li>
+						<textarea class="plain buffer" placeholder="其他信息"> 其他信息</textarea>
+						<div class="clear"> </div>
+					</li>
+					<div class="send"> <a href="#">发送</a> </div>
+				</ul>
+			</div>
+			<div class="right-form">
+				<h4>地址</h4>
+				<p>上海市-闵行区</p>
+				<div class="soc_icons">
+					<h4>社交信息</h4>
+					<ul>
+						<li><a class="icon1" href="#"> <span>QQ</span> </a> </li>
+						<li><a class="icon2" href="#"><span>WeChart</span></a></li>
+						<li><a class="icon3" href="#"><span>Weibo</span></a></li>
+						<li><a class="icon4" href="#"><span>Linkedin</span></a></li>
+						<div class="clear"> </div>
+					</ul>
+				</div>
+			</div>
+			<div class="clear"> </div>
+		</form>
+	</div>
+</div>
+
+<div class="footer">
+	<div class="wrap">
+		<div class="row-content buffer clear-after">
+			<section id="top-footer">
+				<div class="widget column three"><!-- la class="widget" è forse generata utomaticamente da wp -->
+					<h4>Menu</h4>
+					<ul class="plain">
+						<li> <a href="#home" class="scroll">主页</a> </li>
+						<li><a href="#Portfolio" class="scroll">职务</a></li>
+						<li><a href="#skills" class="scroll">技能</a> </li>
+						<li><a class="scroll" href="#Experience">工作经历</a></li>
+						<li><a href="#contact" class="scroll">联系我</a></li>
+						<div class="clear"> </div>
+					</ul>
+				</div>
+
+				<div class="widget column three">
+					<h4>张海彬</h4>
+					<p>张海彬的简历</p>
+				</div>
+				<div class="widget meta-social column three last">
+					<div class="soc_icons soc_icons1">
+						<div class="clear"> </div>
+					</div>
+				</div>
+				<div class="clear"> </div>
+			</section>
+			<!-- top-footer -->
+
+		</div>
+		<!-- row-content -->
+	</div>
+	<!-- row -->
+	<div class="copy">
+		<p>© 2016  By Lantern </p>
+	</div>
+	<!-- scroll_top_btn -->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+			$(document).ready(function() {
+
+				var defaults = {
+		  			containerID: 'toTop', // fading element id
+					containerHoverID: 'toTopHover', // fading element hover id
+					scrollSpeed: 1200,
+					easingType: 'linear'
+		 		};
 
 
+				$().UItoTop({ easingType: 'easeOutQuart' });
 
-    </head>
-    <body>
-    
-    <!--导航开始-->
-    <div class="background-col">
-    <div class="background-pic">
-       <div class="header">
-       <div class="container">
-           <div class="container-right">
-           <p><span id="welcome"><input type="text"  value=""><input type="button" value="Search"></span></p>
-           </div>
-           <div class="container-left">
-           </div>
-       </div>
-       </div>
-       <!--导航结束-->
-
-       <!--主展示区开始-->
-       <div class="main-body" style="z-index:1">
-       <div class="main-body-left" style="z-index:2">
-       <div class="container">
-       <div class="portrait" >
-           <a class="portrait-body" ><img src="images/portrait.png"></a>
-       </div>
-
-       <div id="menu-1" style="display:block;">
-           <div class="menu-1-content" >
-           <h2>我的 <span>精神家园</span></h2>
-
-          <div class="poetry-show"   >
-          <div class="poetry-hidden" >
-           <div class="poetry-1">
-           <h3 style="text-align:center">一代人</h3>
-           <p>在自己的祖国，寻找祖国。在祖先的土地，流浪四方。<br>只有哄堂大笑，没有热泪盈眶，手无寸铁的人，学会了铁石心肠。</p>
-           </div>
-           <br><br><br><br><br>
-
-           <div class="poetry-2">
-           <h3 style="text-align:center">正直的两难</h3>
-           <p>黑暗的年代，总会有几座光亮的牢房。世人隔墙而居。<br>困在墙里的人说，我的良心自由了，身体不自由<br>困在墙外的人说，我的身体自由了，良心不自由。<br>
-           如果身体与灵魂，必有一个带上镣铐，正直的人该在哪里生活？</p>
-           </div>
-            <br><br>
-           <div class="poetry-3" >
-           <h3 style="text-align:center">回家的少年</h3>
-           <p>那一年，第一次出远门，扒货车，一辆接着一辆，我去城里，寻找光荣与梦想。<br>那一年，囊中羞涩，背着诗稿和干粮，我独自一人，想和世界谈一场，平起平坐的恋爱。<br>可我，还是年轻啊，没敢走太远，走太远，也许妈妈，就再也找不着我了。<br>那一年，星星砰砰落地，时间噶然而止，走在寂寞山谷里的乡村少年，刚回到家，外面的天就塌了。</p>
-           </div>
-           </div>
-           
-           </div>
-
-           </div>
-       </div>
-       <!--第一页结束-->
-       <!--第二页开始-->
-       <div id="menu-2" style="display:none;">
-           <div class="row-top">
-               <div class="row-top-l">
-                       
-                           <h3>About Me</h3>
-                           <div class="pic"><img src="images/pic.png "></div>
-                           <div class="world">
-                               <h4>个人资料</h4>
-                               <p>
-                                1.热衷阅读，大学期间，充分利用每一分时间阅读，两度荣获校“阅读之星”荣誉，累计阅读图书700册以上。<br>
-                                2.自学能力强，毕业前夕自学前端，现已学完十多本编程书籍。<br>
-                                3.善于通过google等搜索引擎解决问题。<br>
-                                4.好奇心强，喜欢研究各种技术问题。<br>
-                                5.有毅力，曾骑车环行旅顺半岛，单日骑行150公里。<br>
-                                <br>
-
-</p>
-                           </div>
-                       
-               </div>
-                <div class="row-top-r">
-                    <h3>我的诗歌</h3>
-                    <p>《自由》<br>
-                    <br>我借用海涅笔下的大海<br><br>在那惊涛骇浪中疾呼 <br><br>“站起来吧！少年！”<br><br> “从这一刻起”<br><br>“你自由了”<br><br>“自由地追求生活”<br><br>“自由地寻找过去”<br><br>“自由地探求真理”</p>
-                    <div class="icon">           </div>
-                </div>
-           </div>
-           <div class="row-bottom">
-                <div class="row-bottom-l">
-                    <h3> My Works</h3>
-                    <div class="studio"><img src="images/show.jpg"></div>
-                </div>
-                <div class="row-bottom-r">
-                    
-                    <h3 id="skill">My Skills</h3>
-                    <ul class="skill">
-                     <ul class="progess-bars">
-                        <li >
-                         <span>HTML CSS </span>
-                          <div class="progress">
-                           <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
-                             </div>
-                         </li>
-                              <li>
-                           <span>Jquery </span>
-                            <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
-                             </div>
-                            </li>
-                            <li>
-                             <span>Javascript </span>
-                              <div class="progress">
-                              <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
-                             </div>
-                            </li>
-                             <li>
-                              <span>HTML5  CSS3 </span>
-                               <div class="progress">
-                              <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
-                              </div>
-                              </li>
-                                </ul>
-
-                     
-
-                </div>
-           </div>
-       </div>
-       <!--第二页结束-->
-       <!--第三页开始-->
-        <div id="menu-3" style="display:none;">
-           <div class="menu-3-content">
-               <h3>My Books</h3>
-
-               <div class="show">
-                   <div class="hidden">
-                   <div class="pic-sub">
-                       <div class="item"><img src="images/1.jpg" alt="">
-                       
-                       </div>
-                   </div>
-
-                   <div class="pic-sub">
-                       <div class="item"><img src="images/2.jpg" alt="">
-                       
-                       </div>
-                   </div>
-
-                    <div class="pic-sub">
-                       <div class="item"><img src="images/3.jpg" alt="">
-                       
-                       </div>
-                   </div>
-
-                    <div class="pic-sub">
-                       <div class="item"><img src="images/4.jpg" alt="">
-                       
-                       </div>
-                   </div>
-
-                    <div class="pic-sub">
-                       <div class="item"><img src="images/5.jpg" alt="">
-                       
-                       </div>
-                   </div>
-
-                    <div class="pic-sub">
-                       <div class="item"><img src="images/6.jpg" alt="">
-                       
-                       </div>
-                   </div>
-                     
-                 <div class="pic-sub">
-                       <div class="item"><img src="images/7.jpg" alt="">
-                       
-                       </div>
-                   </div>
-
-                    <div class="pic-sub">
-                       <div class="item"><img src="images/8.jpg" alt="">
-                       
-                       </div>
-                   </div>
-
-                    <div class="pic-sub">
-                       <div class="item"><img src="images/9.jpg" alt="">
-                       
-                       </div>
-                   </div>
-
-                    <div class="pic-sub">
-                       <div class="item"><img src="images/10.jpg" alt="">
-                       
-                       </div>
-                   </div>
-
-                    <div class="pic-sub">
-                       <div class="item"><img src="images/11.jpg" alt="">
-                       
-                       </div>
-                   </div>
-
-                    <div class="pic-sub">
-                       <div class="item"><img src="images/12.jpg" alt="">
-                       
-                       </div>
-                   </div>
-
-                    <div class="pic-sub">
-                       <div class="item"><img src="images/13.jpg" alt="">
-                       
-                       </div>
-                   </div>
-
-                    <div class="pic-sub">
-                       <div class="item"><img src="images/14.jpg" alt="">
-                       
-                       </div>
-                   </div>
-
-                    <div class="pic-sub">
-                       <div class="item"><img src="images/15.jpg" alt="">
-                       
-                       </div>
-                   </div>
-                
-
-                 <div class="pic-sub">
-                       <div class="item"><img src="images/16.jpg" alt="">
-                       
-                       </div>
-                   </div>
-
-               </div>
-    </div>
-       
-        
-        <div class="change_btn">
-            <span class="prev" >上一页</span>
-            <span class="next">下一页</span>
-        </div>
-
-      
-
-           </div>
-       </div>
-       <!--第三页结束-->
-       <!--第四页开始-->
-       <div id="menu-4" style="display:none;">
-           <div class="menu-4-content">
-               <div class="menu-4-content-left">
-                    <div class="box-content">
-                     <h3 class="widget-title">Contact Me</h3>
-                       <form class="contact-form">
-                         
-                         <input type="text" class="name" id="name" placeholder="Name...">
-                           <br>
-                           <br>
-                           <br>
-                          
-                         <input type="email" class="email" id="email" placeholder="Email...">
-                        <br><br><br>
-                         
-                         
-                            <input type="text" class="subject" id="subject" placeholder="Subject...">
-                          <br><br><br>
-                       
-                        <textarea name="message" id="message" cols="30" rows="4" placeholder="Message.."></textarea>
-                        <br><br><br>
-                        
-                        <input type="submit" class="button" id="button" value="Send Message To Me">
-                        <br>
-                         </form>
-                           </div>
-
-               </div>
-               <div class="menu-4-content-right">
-           <div class="box-content">
-                <h3 class="widget-title">The Rsource</h3>
-                  <p>
-               <a href="https://www.coursera.org/">1.Coursera</a><br><br>
-               <a href="https://scotch.io/">2.Scotch ♥ Developers</a><br><br>
-               <a href="http://javascriptweekly.com/">3.JavaScript Weekly</a><br><br>
-               <a  href="https://www.smashingmagazine.com/">4.Smashing Magazine</a><br><br>
-               <a href="https://css-tricks.com/">5.CSS-Tricks。</a><br><br>
-                </p>
-                    <div class="about-social">
-                    <ul>
-                    
-                       </div>
-                        </div>
-               
-
-
-               </div>
-           </div>
-       </div>
-       
-       </div>
-       </div>
-       <div class="main-body-right">
-       <div class="main-menu">
-       <ul class="side-nav">
-
-       <li><a id="nav-home" class="side-nav-1" href="">
-       <i class="fa fa-home"></i>Home</a></li>
-       <li><a id="nav-about" class="side-nav-2" href="">
-       <i class="fa fa-user"></i>About Me</a></li>
-       <li><a  id="nav-books" class="side-nav-3" href="">
-       <i class="fa fa-camera"></i>My Books</a></li>
-       <li><a  id="nav-contact" class="side-nav-4" href="">
-       <i class="fa fa-envelope"></i>Contact Me</a></li>
-       </ul>
-       </div>
-       </div>
-       </div>
-       <!--主展示区结束-->
-       <!--底部开始-->
-       
-       <footer id="footer">
-       <div class="footer">
-       <div class="container">
-       <p>Copyright &copy; 2016 Design by Apress1992 </p>
-       </div>
-       </div>
-       </footer>
-       <!--底部结束-->
-       </div>
-       </div>
-       <li><a id="" class="" href="">
-      
-        </body>
-        </html>
+			});
+		</script>
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+			});
+		});
+	</script>
+	<a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a> </div>
+<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</body>
+</html>
